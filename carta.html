@@ -59,69 +59,62 @@
                 </div>
                 <!--Title-->
 
-                 <!--Content-->
-                 <div class="container lead">
-                    <div class="row">
-                        <div class="col-md">
-                            <div class="border-bottom border-danger pb-2">
-                                <p class="h4 text-center">Para Empezar</p>
-                            </div>
-                            <div class="list-group my-3">
-                                <ol>
-                                    <li>Baos con Crujiente de Langostino.</li>
-                                    <li>Shushi de pez mantequilla.</li>
-                                    <li>Patatas fritas al estilo belga.</li>
-                                    <li>Croquetas de cocido.</li>
-                                    <li>Tempura de corazones de alcachofa.</li>
-                                </ol> 
-                            </div>
-                        </div>
-                        <div class="col-md">
-                            <div class="border-bottom border-danger pb-2">
-                                <p class="h4 text-center">Para Seguir</p>
-                            </div>
-                            <div class="list-group my-3">
-                                <ol>
-                                    <li>Hamburguesa Meat Lovers.</li>
-                                    <li>Pad Thai con pollo de corral.</li>
-                                    <li>Arepa reina pepinada.</li>
-                                    <li>Tacos al pastor.</li>
-                                    <li>Tankotsu ramen.</li>
-                                    <li>Costillar a la brasa con salsa chimichurri.</li>
-                                </ol>
-                            </div>
-                        </div>
+                  <!--Content-->
+        <div class="container lead">
+            <div class="row justify-content-center">
+                <div class="col-md-8 title">
+                    <h4 class="border-bottom border-danger pb-2">Para Empezar</h2>
+                    <div  class="list-group my-3 text-left cont">
+                        <ol class="main">
+                            <li>Baos con Crujiente de Langostino.</li>
+                            <li>Shushi de pez mantequilla.</li>
+                            <li>Patatas fritas al estilo belga.</li>
+                            <li>Croquetas de cocido.</li>
+                            <li>Tempura de corazones de alcachofa.</li>
+                        </ol> 
                     </div>
-                    <div class="row">
-                        <div class="col-md">
-                            <div class="border-bottom border-danger pb-2">
-                                <p class="h4 text-center">Un dulce final</p>
-                            </div>
-                            <div class="list-group my-3">
-                                <ol>
-                                    <li>Brownie casero.</li>
-                                    <li>Tarta de la abuela.</li>
-                                    <li>Quesada tradicional.</li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="col-md">
-                            <div class="border-bottom border-danger pb-2">
-                                <p class="h4 text-center">Y de beber</p>
-                            </div>
-                            <div class="list-group my-3">
-                                <ol>
-                                    <li>Cervezas Artesanales.</li>
-                                    <li>Vinos regionales.</li>
-                                    <li>Refrescos.</li>
-                                    <li>Cócteles caseros.</li>
-                                </ol>
-                            </div>
-                        </div> 
+                
+					<br>
+                    
+					<h4 class="border-bottom border-danger pb-2">Para Seguir</h4>
+					
+                    <div class="list-group my-3 text-left cont">
+                        <ol>
+                            <li>Hamburguesa Meat Lovers.</li>
+                            <li>Pad Thai con pollo de corral.</li>
+                            <li>Arepa reina pepinada.</li>
+                            <li>Tacos al pastor.</li>
+                            <li>Tankotsu ramen.</li>
+                            <li>Costillar a la brasa con salsa chimichurri.</li>
+                        </ol>
                     </div>
-                  </div>
-                <!--/Content-->
 
+            
+					<br>
+              
+                    <h4 class="border-bottom border-danger pb-2">Un dulce final</h4>
+                    <div class="list-group my-3 text-left cont">
+                        <ol>
+                            <li>Brownie casero.</li>
+                            <li>Tarta de la abuela.</li>
+                            <li>Quesada tradicional.</li>
+                        </ol>
+                    </div>
+            
+					<br>
+                    <h4 class="border-bottom border-danger pb-2">Y de beber</h4>
+                    <div class="list-group my-3 text-left cont">
+                        <ol>
+                            <li>Cervezas Artesanales.</li>
+                            <li>Vinos regionales.</li>
+                            <li>Refrescos.</li>
+                            <li>Cócteles caseros.</li>
+                        </ol>
+                    </div>
+                </div>
+			</div>
+          </div>
+        <!--/Content-->
                 <!--Footer-->
                 <div class="container-fluid page-footer bg-dark text-white p-5 m-0">
                     <div class="row text-center">
@@ -138,12 +131,28 @@
         </div>
     </div>
     <!--/Main-->
+	
 
 
 
     <!--Scripts-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"  crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('.cont ~ .cont').hide();
+            $('.title h4').on('click', function() {
+                var state = $(this).next('.cont').is('.open');
+                if (state) {
+                    $(this).next('.cont').removeClass('open').fadeOut();
+                }else{
+                    $(this).next('.cont').addClass('open').slideDown()
+                        .siblings('.cont').removeClass('open').slideUp(380);
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>
